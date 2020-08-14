@@ -39,6 +39,10 @@
             this.btnMinizar = new System.Windows.Forms.PictureBox();
             this.btnCerrarWindows = new System.Windows.Forms.PictureBox();
             this.pnlWrapper = new System.Windows.Forms.Panel();
+            this.TerminalsButton = new System.Windows.Forms.Button();
+            this.LotteryButton = new System.Windows.Forms.Button();
+            this.SorteoButton = new System.Windows.Forms.Button();
+            this.ReportButton = new System.Windows.Forms.Button();
             this.pnlSidebar.SuspendLayout();
             this.pnlSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -51,12 +55,17 @@
             // pnlSidebar
             // 
             this.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.pnlSidebar.Controls.Add(this.ReportButton);
+            this.pnlSidebar.Controls.Add(this.SorteoButton);
+            this.pnlSidebar.Controls.Add(this.LotteryButton);
+            this.pnlSidebar.Controls.Add(this.TerminalsButton);
             this.pnlSidebar.Controls.Add(this.pnlSuperior);
             this.pnlSidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlSidebar.Location = new System.Drawing.Point(0, 0);
             this.pnlSidebar.Name = "pnlSidebar";
             this.pnlSidebar.Size = new System.Drawing.Size(240, 720);
             this.pnlSidebar.TabIndex = 0;
+            this.pnlSidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlSidebar_Paint);
             // 
             // pnlSuperior
             // 
@@ -75,11 +84,11 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Raleway SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(40, 140);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 26);
+            this.label1.Size = new System.Drawing.Size(162, 24);
             this.label1.TabIndex = 3;
             this.label1.Text = "Nombre Usuario";
             // 
@@ -108,11 +117,11 @@
             // lblNombreSoftware
             // 
             this.lblNombreSoftware.AutoSize = true;
-            this.lblNombreSoftware.Font = new System.Drawing.Font("Raleway ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreSoftware.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreSoftware.ForeColor = System.Drawing.Color.White;
             this.lblNombreSoftware.Location = new System.Drawing.Point(41, 4);
             this.lblNombreSoftware.Name = "lblNombreSoftware";
-            this.lblNombreSoftware.Size = new System.Drawing.Size(110, 34);
+            this.lblNombreSoftware.Size = new System.Drawing.Size(104, 29);
             this.lblNombreSoftware.TabIndex = 0;
             this.lblNombreSoftware.Text = "Lotocus";
             // 
@@ -155,11 +164,63 @@
             // 
             this.pnlWrapper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(243)))), ((int)(((byte)(239)))));
             this.pnlWrapper.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlWrapper.Font = new System.Drawing.Font("Raleway SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlWrapper.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlWrapper.Location = new System.Drawing.Point(240, 36);
             this.pnlWrapper.Name = "pnlWrapper";
             this.pnlWrapper.Size = new System.Drawing.Size(1040, 684);
             this.pnlWrapper.TabIndex = 2;
+            // 
+            // TerminalsButton
+            // 
+            this.TerminalsButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TerminalsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TerminalsButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TerminalsButton.ForeColor = System.Drawing.Color.White;
+            this.TerminalsButton.Location = new System.Drawing.Point(0, 205);
+            this.TerminalsButton.Name = "TerminalsButton";
+            this.TerminalsButton.Size = new System.Drawing.Size(240, 40);
+            this.TerminalsButton.TabIndex = 1;
+            this.TerminalsButton.Text = "Terminales";
+            this.TerminalsButton.UseVisualStyleBackColor = true;
+            // 
+            // LotteryButton
+            // 
+            this.LotteryButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LotteryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LotteryButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LotteryButton.ForeColor = System.Drawing.Color.White;
+            this.LotteryButton.Location = new System.Drawing.Point(0, 245);
+            this.LotteryButton.Name = "LotteryButton";
+            this.LotteryButton.Size = new System.Drawing.Size(240, 40);
+            this.LotteryButton.TabIndex = 2;
+            this.LotteryButton.Text = "Loterias";
+            this.LotteryButton.UseVisualStyleBackColor = true;
+            // 
+            // SorteoButton
+            // 
+            this.SorteoButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SorteoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SorteoButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SorteoButton.ForeColor = System.Drawing.Color.White;
+            this.SorteoButton.Location = new System.Drawing.Point(0, 285);
+            this.SorteoButton.Name = "SorteoButton";
+            this.SorteoButton.Size = new System.Drawing.Size(240, 40);
+            this.SorteoButton.TabIndex = 3;
+            this.SorteoButton.Text = "Sorteos";
+            this.SorteoButton.UseVisualStyleBackColor = true;
+            // 
+            // ReportButton
+            // 
+            this.ReportButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ReportButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ReportButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReportButton.ForeColor = System.Drawing.Color.White;
+            this.ReportButton.Location = new System.Drawing.Point(0, 325);
+            this.ReportButton.Name = "ReportButton";
+            this.ReportButton.Size = new System.Drawing.Size(240, 40);
+            this.ReportButton.TabIndex = 4;
+            this.ReportButton.Text = "Reportes";
+            this.ReportButton.UseVisualStyleBackColor = true;
             // 
             // FrmPrincipal
             // 
@@ -197,5 +258,9 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel pnlWrapper;
+        private System.Windows.Forms.Button ReportButton;
+        private System.Windows.Forms.Button SorteoButton;
+        private System.Windows.Forms.Button LotteryButton;
+        private System.Windows.Forms.Button TerminalsButton;
     }
 }

@@ -39,9 +39,9 @@ namespace CapaPresentacion
             WindowState = FormWindowState.Minimized;
         }
 
-       
-    
+        private void pnlSidebar_Paint(object sender, PaintEventArgs e)
+        {
 
-
+        }
     }
 }
