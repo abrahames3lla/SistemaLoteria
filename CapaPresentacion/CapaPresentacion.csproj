@@ -126,7 +126,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Venta.resx">
+      <DependentUpon>Venta.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -142,6 +146,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
+      <Project>{570421c9-16eb-47b9-8815-d67dd5db9431}</Project>
+      <Name>CapaDatos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CapaEntidades\CapaEntidades.csproj">
       <Project>{bb14e809-98b2-42ff-a155-317cd576a02a}</Project>
       <Name>CapaEntidades</Name>
@@ -150,6 +158,14 @@
       <Project>{bf79ca0a-478c-406b-a686-d0be6f5132c8}</Project>
       <Name>CapaNegocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\super-pale.jpg" />
+    <None Include="Resources\quiniela-pale.jpg" />
+    <None Include="Resources\loteria-real1.jpg" />
+    <None Include="Resources\loteria-real.jpg" />
+    <None Include="Resources\loteria-nacional.jpg" />
+    <None Include="Resources\LoteriaN.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
