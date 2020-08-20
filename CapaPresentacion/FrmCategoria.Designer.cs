@@ -30,7 +30,6 @@
         {
             this.tablaCategoria = new System.Windows.Forms.DataGridView();
             this.txtBuscar = new System.Windows.Forms.TextBox();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.tablaCategoria)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,29 +51,11 @@
             this.txtBuscar.Size = new System.Drawing.Size(100, 20);
             this.txtBuscar.TabIndex = 1;
             // 
-            // iconButton1
-            // 
-            this.iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButton1.ForeColor = System.Drawing.Color.DarkRed;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Facebook;
-            this.iconButton1.IconColor = System.Drawing.Color.DarkRed;
-            this.iconButton1.IconSize = 24;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(554, 138);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Rotation = 0D;
-            this.iconButton1.Size = new System.Drawing.Size(116, 36);
-            this.iconButton1.TabIndex = 2;
-            this.iconButton1.Text = "Facebook";
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton1.UseVisualStyleBackColor = true;
-            // 
             // FrmCategoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.tablaCategoria);
             this.Name = "FrmCategoria";
@@ -90,6 +71,5 @@
 
         private System.Windows.Forms.DataGridView tablaCategoria;
         private System.Windows.Forms.TextBox txtBuscar;
-        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }
