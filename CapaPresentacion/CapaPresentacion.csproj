@@ -103,6 +103,9 @@
     <EmbeddedResource Include="Consorcio.resx">
       <DependentUpon>Consorcio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Empleado.resx">
+      <DependentUpon>Empleado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCategoria.resx">
       <DependentUpon>FrmCategoria.cs</DependentUpon>
     </EmbeddedResource>
