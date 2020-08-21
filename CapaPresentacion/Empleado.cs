@@ -21,7 +21,7 @@ namespace CapaPresentacion
         public bool Validate()
         {
                     bool output = true;
-                    if (!ValidarCa  vmpos.NotEmpty(NombreTextBox.Text))
+                    if (!ValidarCampos.NotEmpty(NombreTextBox.Text))
                     {
                         output = false;
                         errorProvider1.SetError(NombreTextBox, "Este campo no puede estar vacio");
@@ -81,16 +81,16 @@ namespace CapaPresentacion
             errorProvider1.SetError(TelefonoTextBox, "Este campo puede tener solamente letras");
         }
 
-        if (!ValidarCampos.NotEmpty(IdDireccionTextbox.Text))
+        if (!ValidarCampos.NotEmpty(DirreccionTextBox.Text))
         {
             output = false;
-            errorProvider1.SetError(IdDireccionTextbox, "Este campo no puede estar vacio");
+            errorProvider1.SetError(DirreccionTextBox, "Este campo no puede estar vacio");
         }
 
-        if (!ValidarCampos.OnlyNumber(IdDireccionTextbox.Text))
+        if (!ValidarCampos.OnlyNumber(DirreccionTextBox.Text))
         {
             output = false;
-            errorProvider1.SetError(IdDireccionTextbox, "Este campo puede tener solamente letras");
+            errorProvider1.SetError(DirreccionTextBox, "Este campo puede tener solamente letras");
         }
 
         return output;
