@@ -87,6 +87,7 @@
             this.NuevoButton.TabIndex = 5;
             this.NuevoButton.Text = "Nuevo";
             this.NuevoButton.UseVisualStyleBackColor = true;
+            this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
             // 
             // GeneralDatagridview
             // 
