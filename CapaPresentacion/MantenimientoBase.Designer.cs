@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.EliminarButton = new System.Windows.Forms.Button();
             this.EditarButton = new System.Windows.Forms.Button();
             this.GuardarButton = new System.Windows.Forms.Button();
             this.NuevoButton = new System.Windows.Forms.Button();
             this.GeneralDatagridview = new System.Windows.Forms.DataGridView();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.GeneralDatagridview)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // EliminarButton
@@ -97,6 +100,10 @@
             this.GeneralDatagridview.Size = new System.Drawing.Size(687, 539);
             this.GeneralDatagridview.TabIndex = 9;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // MantenimientoBase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
@@ -114,6 +121,7 @@
             this.Name = "MantenimientoBase";
             this.Text = "MantenimientoBase";
             ((System.ComponentModel.ISupportInitialize)(this.GeneralDatagridview)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -125,5 +133,6 @@
         public System.Windows.Forms.Button GuardarButton;
         public System.Windows.Forms.Button NuevoButton;
         public System.Windows.Forms.DataGridView GeneralDatagridview;
+        public System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
