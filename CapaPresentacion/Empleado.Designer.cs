@@ -36,7 +36,6 @@
             this.SexoComboBox = new System.Windows.Forms.ComboBox();
             this.FechaDeNacimientoPiccker = new System.Windows.Forms.DateTimePicker();
             this.FechaIngresadoPicker = new System.Windows.Forms.DateTimePicker();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // EliminarButton
@@ -113,19 +112,11 @@
             this.FechaIngresadoPicker.Size = new System.Drawing.Size(272, 26);
             this.FechaIngresadoPicker.TabIndex = 14;
             // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(316, 76);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(100, 23);
-            this.progressBar1.TabIndex = 15;
-            // 
             // Empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.FechaIngresadoPicker);
             this.Controls.Add(this.FechaDeNacimientoPiccker);
             this.Controls.Add(this.SexoComboBox);
@@ -149,7 +140,6 @@
             this.Controls.SetChildIndex(this.SexoComboBox, 0);
             this.Controls.SetChildIndex(this.FechaDeNacimientoPiccker, 0);
             this.Controls.SetChildIndex(this.FechaIngresadoPicker, 0);
-            this.Controls.SetChildIndex(this.progressBar1, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,6 +155,5 @@
         private System.Windows.Forms.ComboBox SexoComboBox;
         private System.Windows.Forms.DateTimePicker FechaDeNacimientoPiccker;
         private System.Windows.Forms.DateTimePicker FechaIngresadoPicker;
-        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }
