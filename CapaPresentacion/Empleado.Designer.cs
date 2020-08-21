@@ -31,11 +31,12 @@
             this.NombreTextBox = new System.Windows.Forms.TextBox();
             this.ApellidoTextBox = new System.Windows.Forms.TextBox();
             this.TelefonoTextBox = new System.Windows.Forms.TextBox();
-            this.Dirreccion = new System.Windows.Forms.TextBox();
+            this.Direccion = new System.Windows.Forms.TextBox();
             this.TipoEmpleadoCombobox = new System.Windows.Forms.ComboBox();
             this.SexoComboBox = new System.Windows.Forms.ComboBox();
             this.FechaDeNacimientoPiccker = new System.Windows.Forms.DateTimePicker();
             this.FechaIngresadoPicker = new System.Windows.Forms.DateTimePicker();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // EliminarButton
@@ -75,12 +76,12 @@
             this.TelefonoTextBox.Size = new System.Drawing.Size(272, 26);
             this.TelefonoTextBox.TabIndex = 10;
             // 
-            // Dirreccion
+            // Direccion
             // 
-            this.Dirreccion.Location = new System.Drawing.Point(142, 464);
-            this.Dirreccion.Name = "Dirreccion";
-            this.Dirreccion.Size = new System.Drawing.Size(272, 26);
-            this.Dirreccion.TabIndex = 10;
+            this.Direccion.Location = new System.Drawing.Point(142, 464);
+            this.Direccion.Name = "Direccion";
+            this.Direccion.Size = new System.Drawing.Size(272, 26);
+            this.Direccion.TabIndex = 10;
             // 
             // TipoEmpleadoCombobox
             // 
@@ -121,7 +122,7 @@
             this.Controls.Add(this.FechaDeNacimientoPiccker);
             this.Controls.Add(this.SexoComboBox);
             this.Controls.Add(this.TipoEmpleadoCombobox);
-            this.Controls.Add(this.Dirreccion);
+            this.Controls.Add(this.Direccion);
             this.Controls.Add(this.TelefonoTextBox);
             this.Controls.Add(this.ApellidoTextBox);
             this.Controls.Add(this.NombreTextBox);
@@ -135,11 +136,12 @@
             this.Controls.SetChildIndex(this.NombreTextBox, 0);
             this.Controls.SetChildIndex(this.ApellidoTextBox, 0);
             this.Controls.SetChildIndex(this.TelefonoTextBox, 0);
-            this.Controls.SetChildIndex(this.Dirreccion, 0);
+            this.Controls.SetChildIndex(this.Direccion, 0);
             this.Controls.SetChildIndex(this.TipoEmpleadoCombobox, 0);
             this.Controls.SetChildIndex(this.SexoComboBox, 0);
             this.Controls.SetChildIndex(this.FechaDeNacimientoPiccker, 0);
             this.Controls.SetChildIndex(this.FechaIngresadoPicker, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,7 +152,7 @@
         private System.Windows.Forms.TextBox NombreTextBox;
         private System.Windows.Forms.TextBox ApellidoTextBox;
         private System.Windows.Forms.TextBox TelefonoTextBox;
-        private System.Windows.Forms.TextBox Dirreccion;
+        private System.Windows.Forms.TextBox Direccion;
         private System.Windows.Forms.ComboBox TipoEmpleadoCombobox;
         private System.Windows.Forms.ComboBox SexoComboBox;
         private System.Windows.Forms.DateTimePicker FechaDeNacimientoPiccker;

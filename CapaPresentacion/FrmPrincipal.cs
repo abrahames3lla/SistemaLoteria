@@ -43,5 +43,24 @@ namespace CapaPresentacion
         {
 
         }
+
+        private Form formActivado = null;
+        private void AbrirFormulario(Form FormHijo)
+        {
+            if (formActivado != null)
+                formActivado.Close();
+            formActivado = FormHijo;
+            FormHijo.TopLevel = false;
+            FormHijo.Dock = DockStyle.Fill;
+            pnlWrapper.Controls.Add(FormHijo);
+            pnlWrapper.Tag = FormHijo;
+            FormHijo.BringToFront();
+            FormHijo.Show();
+        }
+
+        private void btnConsocio_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmConsorcio());
+        }
     }
 }

@@ -56,12 +56,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Consorcio.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Consorcio.Designer.cs">
-      <DependentUpon>Consorcio.cs</DependentUpon>
-    </Compile>
     <Compile Include="Empleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +67,12 @@
     </Compile>
     <Compile Include="FrmCategoria.Designer.cs">
       <DependentUpon>FrmCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsorcio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsorcio.Designer.cs">
+      <DependentUpon>FrmConsorcio.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmInventario.cs">
       <SubType>Form</SubType>
@@ -100,14 +100,22 @@
     <Compile Include="txt.Designer.cs">
       <DependentUpon>txt.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Consorcio.resx">
-      <DependentUpon>Consorcio.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="Venta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta.Designer.cs">
+      <DependentUpon>Venta.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <EmbeddedResource Include="Empleado.resx">
       <DependentUpon>Empleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCategoria.resx">
       <DependentUpon>FrmCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsorcio.resx">
+      <DependentUpon>FrmConsorcio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInventario.resx">
       <DependentUpon>FrmInventario.cs</DependentUpon>
@@ -130,6 +138,8 @@
     </Compile>
     <EmbeddedResource Include="Venta.resx">
       <DependentUpon>Venta.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Venta.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

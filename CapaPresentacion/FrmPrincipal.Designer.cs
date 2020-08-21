@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.pnlSidebar = new System.Windows.Forms.Panel();
+            this.ReportButton = new System.Windows.Forms.Button();
+            this.SorteoButton = new System.Windows.Forms.Button();
+            this.LotteryButton = new System.Windows.Forms.Button();
+            this.TerminalsButton = new System.Windows.Forms.Button();
             this.pnlSuperior = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -39,10 +43,7 @@
             this.btnMinizar = new System.Windows.Forms.PictureBox();
             this.btnCerrarWindows = new System.Windows.Forms.PictureBox();
             this.pnlWrapper = new System.Windows.Forms.Panel();
-            this.TerminalsButton = new System.Windows.Forms.Button();
-            this.LotteryButton = new System.Windows.Forms.Button();
-            this.SorteoButton = new System.Windows.Forms.Button();
-            this.ReportButton = new System.Windows.Forms.Button();
+            this.btnConsocio = new System.Windows.Forms.Button();
             this.pnlSidebar.SuspendLayout();
             this.pnlSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -55,6 +56,7 @@
             // pnlSidebar
             // 
             this.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.pnlSidebar.Controls.Add(this.btnConsocio);
             this.pnlSidebar.Controls.Add(this.ReportButton);
             this.pnlSidebar.Controls.Add(this.SorteoButton);
             this.pnlSidebar.Controls.Add(this.LotteryButton);
@@ -66,6 +68,58 @@
             this.pnlSidebar.Size = new System.Drawing.Size(240, 720);
             this.pnlSidebar.TabIndex = 0;
             this.pnlSidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlSidebar_Paint);
+            // 
+            // ReportButton
+            // 
+            this.ReportButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ReportButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ReportButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReportButton.ForeColor = System.Drawing.Color.White;
+            this.ReportButton.Location = new System.Drawing.Point(0, 325);
+            this.ReportButton.Name = "ReportButton";
+            this.ReportButton.Size = new System.Drawing.Size(240, 40);
+            this.ReportButton.TabIndex = 4;
+            this.ReportButton.Text = "Reportes";
+            this.ReportButton.UseVisualStyleBackColor = true;
+            // 
+            // SorteoButton
+            // 
+            this.SorteoButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SorteoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SorteoButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SorteoButton.ForeColor = System.Drawing.Color.White;
+            this.SorteoButton.Location = new System.Drawing.Point(0, 285);
+            this.SorteoButton.Name = "SorteoButton";
+            this.SorteoButton.Size = new System.Drawing.Size(240, 40);
+            this.SorteoButton.TabIndex = 3;
+            this.SorteoButton.Text = "Sorteos";
+            this.SorteoButton.UseVisualStyleBackColor = true;
+            // 
+            // LotteryButton
+            // 
+            this.LotteryButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LotteryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LotteryButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LotteryButton.ForeColor = System.Drawing.Color.White;
+            this.LotteryButton.Location = new System.Drawing.Point(0, 245);
+            this.LotteryButton.Name = "LotteryButton";
+            this.LotteryButton.Size = new System.Drawing.Size(240, 40);
+            this.LotteryButton.TabIndex = 2;
+            this.LotteryButton.Text = "Loterias";
+            this.LotteryButton.UseVisualStyleBackColor = true;
+            // 
+            // TerminalsButton
+            // 
+            this.TerminalsButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TerminalsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TerminalsButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TerminalsButton.ForeColor = System.Drawing.Color.White;
+            this.TerminalsButton.Location = new System.Drawing.Point(0, 205);
+            this.TerminalsButton.Name = "TerminalsButton";
+            this.TerminalsButton.Size = new System.Drawing.Size(240, 40);
+            this.TerminalsButton.TabIndex = 1;
+            this.TerminalsButton.Text = "Terminales";
+            this.TerminalsButton.UseVisualStyleBackColor = true;
             // 
             // pnlSuperior
             // 
@@ -170,57 +224,19 @@
             this.pnlWrapper.Size = new System.Drawing.Size(1040, 684);
             this.pnlWrapper.TabIndex = 2;
             // 
-            // TerminalsButton
+            // btnConsocio
             // 
-            this.TerminalsButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TerminalsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.TerminalsButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TerminalsButton.ForeColor = System.Drawing.Color.White;
-            this.TerminalsButton.Location = new System.Drawing.Point(0, 205);
-            this.TerminalsButton.Name = "TerminalsButton";
-            this.TerminalsButton.Size = new System.Drawing.Size(240, 40);
-            this.TerminalsButton.TabIndex = 1;
-            this.TerminalsButton.Text = "Terminales";
-            this.TerminalsButton.UseVisualStyleBackColor = true;
-            // 
-            // LotteryButton
-            // 
-            this.LotteryButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.LotteryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LotteryButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LotteryButton.ForeColor = System.Drawing.Color.White;
-            this.LotteryButton.Location = new System.Drawing.Point(0, 245);
-            this.LotteryButton.Name = "LotteryButton";
-            this.LotteryButton.Size = new System.Drawing.Size(240, 40);
-            this.LotteryButton.TabIndex = 2;
-            this.LotteryButton.Text = "Loterias";
-            this.LotteryButton.UseVisualStyleBackColor = true;
-            // 
-            // SorteoButton
-            // 
-            this.SorteoButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.SorteoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SorteoButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SorteoButton.ForeColor = System.Drawing.Color.White;
-            this.SorteoButton.Location = new System.Drawing.Point(0, 285);
-            this.SorteoButton.Name = "SorteoButton";
-            this.SorteoButton.Size = new System.Drawing.Size(240, 40);
-            this.SorteoButton.TabIndex = 3;
-            this.SorteoButton.Text = "Sorteos";
-            this.SorteoButton.UseVisualStyleBackColor = true;
-            // 
-            // ReportButton
-            // 
-            this.ReportButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ReportButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ReportButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReportButton.ForeColor = System.Drawing.Color.White;
-            this.ReportButton.Location = new System.Drawing.Point(0, 325);
-            this.ReportButton.Name = "ReportButton";
-            this.ReportButton.Size = new System.Drawing.Size(240, 40);
-            this.ReportButton.TabIndex = 4;
-            this.ReportButton.Text = "Reportes";
-            this.ReportButton.UseVisualStyleBackColor = true;
+            this.btnConsocio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnConsocio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConsocio.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsocio.ForeColor = System.Drawing.Color.White;
+            this.btnConsocio.Location = new System.Drawing.Point(0, 365);
+            this.btnConsocio.Name = "btnConsocio";
+            this.btnConsocio.Size = new System.Drawing.Size(240, 40);
+            this.btnConsocio.TabIndex = 5;
+            this.btnConsocio.Text = "Consorcio";
+            this.btnConsocio.UseVisualStyleBackColor = true;
+            this.btnConsocio.Click += new System.EventHandler(this.btnConsocio_Click);
             // 
             // FrmPrincipal
             // 
@@ -262,5 +278,6 @@
         private System.Windows.Forms.Button SorteoButton;
         private System.Windows.Forms.Button LotteryButton;
         private System.Windows.Forms.Button TerminalsButton;
+        private System.Windows.Forms.Button btnConsocio;
     }
 }
