@@ -43,6 +43,10 @@
             this.btnMinizar = new System.Windows.Forms.PictureBox();
             this.btnCerrarWindows = new System.Windows.Forms.PictureBox();
             this.pnlWrapper = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
+            this.btnConsocio = new System.Windows.Forms.Button();
+=======
+>>>>>>> 8dc791a60fe5c4d00e7e5702b3c628aedeeb4a53
             this.pnlSidebar.SuspendLayout();
             this.pnlSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -55,6 +59,7 @@
             // pnlSidebar
             // 
             this.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.pnlSidebar.Controls.Add(this.btnConsocio);
             this.pnlSidebar.Controls.Add(this.ReportButton);
             this.pnlSidebar.Controls.Add(this.SorteoButton);
             this.pnlSidebar.Controls.Add(this.LotteryButton);
@@ -221,7 +226,24 @@
             this.pnlWrapper.Name = "pnlWrapper";
             this.pnlWrapper.Size = new System.Drawing.Size(1040, 684);
             this.pnlWrapper.TabIndex = 2;
+<<<<<<< HEAD
+            // 
+            // btnConsocio
+            // 
+            this.btnConsocio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnConsocio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConsocio.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsocio.ForeColor = System.Drawing.Color.White;
+            this.btnConsocio.Location = new System.Drawing.Point(0, 365);
+            this.btnConsocio.Name = "btnConsocio";
+            this.btnConsocio.Size = new System.Drawing.Size(240, 40);
+            this.btnConsocio.TabIndex = 5;
+            this.btnConsocio.Text = "Consorcio";
+            this.btnConsocio.UseVisualStyleBackColor = true;
+            this.btnConsocio.Click += new System.EventHandler(this.btnConsocio_Click);
+=======
             this.pnlWrapper.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlWrapper_Paint);
+>>>>>>> 8dc791a60fe5c4d00e7e5702b3c628aedeeb4a53
             // 
             // FrmPrincipal
             // 
@@ -263,5 +285,6 @@
         private System.Windows.Forms.Button SorteoButton;
         private System.Windows.Forms.Button LotteryButton;
         private System.Windows.Forms.Button TerminalsButton;
+        private System.Windows.Forms.Button btnConsocio;
     }
 }
