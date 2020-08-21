@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CapaEntidades
 {
@@ -17,5 +18,12 @@ namespace CapaEntidades
         public string CodigoCategoria { get => _codigoCategoria; set => _codigoCategoria = value; }
         public string NombreCategoria { get => _nombreCategoria; set => _nombreCategoria = value; }
         public string DescripcionCategoria { get => _descripcionCategoria; set => _descripcionCategoria = value; }
+    
+    
+    
+    
+    
     }
+
+    
 }

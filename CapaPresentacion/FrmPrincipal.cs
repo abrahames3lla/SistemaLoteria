@@ -43,5 +43,10 @@ namespace CapaPresentacion
         {
 
         }
+
+        private void pnlWrapper_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
