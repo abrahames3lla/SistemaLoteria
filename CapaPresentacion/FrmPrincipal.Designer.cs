@@ -43,7 +43,10 @@
             this.btnMinizar = new System.Windows.Forms.PictureBox();
             this.btnCerrarWindows = new System.Windows.Forms.PictureBox();
             this.pnlWrapper = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
             this.btnConsocio = new System.Windows.Forms.Button();
+=======
+>>>>>>> 8dc791a60fe5c4d00e7e5702b3c628aedeeb4a53
             this.pnlSidebar.SuspendLayout();
             this.pnlSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -223,6 +226,7 @@
             this.pnlWrapper.Name = "pnlWrapper";
             this.pnlWrapper.Size = new System.Drawing.Size(1040, 684);
             this.pnlWrapper.TabIndex = 2;
+<<<<<<< HEAD
             // 
             // btnConsocio
             // 
@@ -237,6 +241,9 @@
             this.btnConsocio.Text = "Consorcio";
             this.btnConsocio.UseVisualStyleBackColor = true;
             this.btnConsocio.Click += new System.EventHandler(this.btnConsocio_Click);
+=======
+            this.pnlWrapper.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlWrapper_Paint);
+>>>>>>> 8dc791a60fe5c4d00e7e5702b3c628aedeeb4a53
             // 
             // FrmPrincipal
             // 
